@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="home">
+      <div class="main">
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="img/logo.png" alt="" class="logo" />
+            <h3><span>M</span>ARIANNE <span>L</span>OUISE</h3>
+          </div>
+
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+          <ul id="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3>Hello! I'm <span>M</span>arianne.</h3>
+          <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
+          <h4><i>A fresh graduate from Isabela State University - Roxas</i></h4>
+        </div>
+
+        <div class="buttons">
+          <p>Contact Me ──</p>
+          <a href="https://www.facebook.com/share/1968xvtyRQ/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.tiktok.com/@guiamedrano_?_t=ZS-8xmwvWttTRI&_r=1"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.instagram.com/guiamedrano_?igsh=ZTZmZGxpYWd1ZnJn"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://github.com/mariannelouiseee"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="image">
+          <img src="img/mypic.JPG" class="mypic" />
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="about_page">
+        <div class="details">
+          <div class="about_image">
+            <img src="img/about_pic.JPG" alt="About Me Picture" />
+          </div>
+          <div class="about_info">
+            <h1>ABOUT ME</h1>
+            <p>
+              Hi! I’m Marianne Louise V. Medrano, a fresh graduate from Isabela
+              State University – Roxas Campus, majoring in Web and Mobile
+              Application Development. I have background knowledge in HTML, CSS,
+              PHP, and Python. Although I sometimes struggle with creating fully
+              responsive websites, I’m actively working to improve and expand my
+              skills through consistent practice and self-learning. I come from
+              a family of six and am the third child, which has taught me how to
+              be both independent and cooperative. My experiences have shaped me
+              into someone who is patient, responsible, and always eager to
+              grow. I’m passionate about technology and excited to start my
+              journey as a developer—learning from others, contributing to
+              real-world projects, and continuously challenging myself along the
+              way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="education">
+      <div class="educ">
+        <h2>EDUCATIONAL BACKGROUND</h2>
+
+        <div class="education-item">
+          <h3>Tertiary</h3>
+          <p>
+            <strong>Bachelor of Science in Information Technology</strong> (2021
+            – Present)
+          </p>
+          <p>Isabela State University – Roxas Campus</p>
+          <p>Rang-ayan, Roxas, Isabela</p>
+          <p><em>Magna Cum Laude</em></p>
+        </div>
+
+        <div class="education-item">
+          <h3>Secondary</h3>
+          <p><strong>Sandiat National High School</strong> (2015 – 2021)</p>
+          <p>Sandiat East, San Manuel, Isabela</p>
+          <p><strong>Aurora Senior High School</strong></p>
+          <p>Ballesteros, Aurora, Isabela</p>
+          <p><em>With Honors</em></p>
+        </div>
+
+        <div class="education-item">
+          <h3>Primary</h3>
+          <p><strong>Villanueva Elementary School</strong> (2009 – 2015)</p>
+          <p>Villanueva, San Manuel, Isabela</p>
+          <p><em>Valedictorian</em></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="fade-in">
+      <h2>SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skills-column">
+          <div class="icon-circle"><i class="fab fa-html5"></i></div>
+          <div class="skill">
+            <p>HTML <span>90%</span></p>
+            <input type="range" value="90" disabled />
+          </div>
+
+          <div class="icon-circle"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill">
+            <p>CSS <span>85%</span></p>
+            <input type="range" value="85" disabled />
+          </div>
+        </div>
+        <div class="skills-column">
+          <div class="icon-circle"><i class="fab fa-php"></i></div>
+          <div class="skill">
+            <p>PHP <span>75%</span></p>
+            <input type="range" value="75" disabled />
+          </div>
+          <div class="icon-circle"><i class="fab fa-python"></i></div>
+          <div class="skill">
+            <p>Python <span>70%</span></p>
+            <input type="range" value="70" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
